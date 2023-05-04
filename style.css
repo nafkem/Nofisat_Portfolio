@@ -10,6 +10,7 @@
     background-image: url(image/naf.jpg);
     background-size: cover;
     background-position: center;
+    /* border: 2px solid red; */
     background-repeat: no-repeat;
     }
 nav{
@@ -139,6 +140,7 @@ button:hover{
 .service{
     background: #101010;
     width:100%;
+    /* border: 2px solid red; */
     padding: 100px 0px;
 }
 .title h2{
@@ -150,26 +152,23 @@ button:hover{
 }
 .box{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-height: 400px;
 }
 .card{
     height: 365px;
-    width: 335px;
+    width: 30%;
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
     text-align: center;
 }
 .card i{
     font-size: 50px;
     display: block;
     text-align: center;
-    margin: 25PX 0px;
+    margin: 25px 0px;
     color: #f9004d;
 }
 h5{
@@ -195,11 +194,12 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    /* border: 2px solid #f9004d; */
     cursor: pointer;
 }
 footer {
     background: #191919;
+    /* border: 2px solid red; */
     text-align: center;
     color: aliceblue;
 }
@@ -211,7 +211,42 @@ footer a i{
     color: aliceblue;
     font-size: 1.5rem;
 }
-
+@media screen and (max-width: 900px) {
+.main{
+         width: 100%;
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    nav{
+        display: none;
+    }    
+    .about img{
+        object-fit: cover;
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+    .about-text{
+        width:95%;
+    }
+    .about-text h2{
+        font-size: 35px;
+    }
+.card{
+    width: 95%;
+}    
+.service{
+    height: 100%;
+    padding: 20px 0;
+}
+  }
 
 
 
