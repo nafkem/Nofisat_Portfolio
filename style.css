@@ -4,10 +4,16 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
+ul li{
+    list-style: none;
+}
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(image/naf.jpg);
+    background-image: url(image/naf4.jpg);
     background-size: cover;
     background-position: center;
     /* border: 2px solid red; */
@@ -138,6 +144,19 @@ button:hover{
     cursor: pointer; 
 }
 .service{
+    background: #101010;
+    width:100%;
+    /* border: 2px solid red; */
+    padding: 100px 0px;
+}
+.title h2{
+    color: aliceblue;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.project{
     background: #101010;
     width:100%;
     /* border: 2px solid red; */
